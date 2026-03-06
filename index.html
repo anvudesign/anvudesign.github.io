@@ -45,6 +45,34 @@
     padding: 12px 20px;
     font-size: 18px;
 }
+
+		  /* FIX LỖI KHÔNG SCROLL ĐƯỢC TRÊN ĐIỆN THOẠI (Colorlib template) */
+
+/* 1. Menu gốc không còn phủ toàn màn hình */
+#ftco-nav {
+    height: auto !important;
+    max-height: 100vh !important;
+    overflow-y: auto !important;
+    position: relative !important;
+}
+
+/* 2. Navbar không còn fixed che toàn trang */
+.ftco-navbar-light {
+    position: relative !important;
+}
+
+/* 3. Xóa hiệu ứng full-height gây khóa scroll */
+.js-fullheight {
+    height: auto !important;
+    min-height: auto !important;
+}
+
+/* 4. Slider không ép 100vh nữa */
+.home-slider,
+.slider-item {
+    height: auto !important;
+}
+
     </style>
 
   </head>
