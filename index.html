@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	  <style>/* ============================
-   NAVBAR FIXED
-============================ */
+	  <style>
+/* MENU DÍNH TRÊN ĐẦU */
 .ftco-navbar-light {
     position: fixed !important;
     top: 0;
@@ -32,6 +31,7 @@
     z-index: 1000;
 }
 
+/* Chừa chỗ cho navbar */
 body {
     padding-top: 120px;
 }
@@ -42,59 +42,51 @@ body {
     overflow-y: auto !important;
 }
 
-/* ============================
-   SLIDER DESKTOP
-============================ */
+/* Bỏ full-height mặc định */
 .js-fullheight {
     height: auto !important;
-    min-height: 600px !important;
+    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
 }
 
+/* Slider không ép 100vh */
 .home-slider,
 .slider-item {
     height: auto !important;
-    min-height: 600px !important;
+    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
 }
 
-/* ============================
-   MOBILE FIX — CHUẨN NHẤT
-============================ */
+/* Luôn hiển thị chữ MENU */
+.ftco-navbar-light .navbar-toggler,
+.ftco-navbar-light.scrolled .navbar-toggler {
+    color: #fff !important;
+}
+
+/* FIX KHOẢNG TRẮNG LỚN TRÊN MOBILE */
 @media (max-width: 767px) {
 
-    /* Giảm khoảng trống cho navbar */
-    body {
-        padding-top: 80px !important;
-    }
-
-    /* Tắt Scrollax đẩy chữ xuống */
-    .slider-item .one-forth[data-scrollax] {
-        transform: none !important;
-    }
-
-    /* Tắt animation đẩy chữ xuống */
-    .slider-item .one-forth.ftco-animate {
-        opacity: 1 !important;
-        transform: none !important;
-        animation: none !important;
-    }
-
-    /* Đưa chữ lên đầu cột thay vì giữa */
-    .slider-item .one-forth {
-        align-items: flex-start !important;
-    }
-
-    /* Đưa chữ vào lại khung slider */
-    .slider-item .one-forth .text {
+    /* Class gây lỗi thật sự */
+    .slider-item .one-third .slider-text {
+        padding-top: 20px !important;
         margin-top: 0 !important;
-        padding-top: 40px !important;
     }
 
-    /* Giảm chiều cao slider cho mobile */
+    /* Giảm chiều cao slider cho mobile nhưng KHÔNG được thấp quá */
     .slider-item,
     .home-slider,
     .js-fullheight {
-        min-height: 480px !important;
+        min-height: 450px !important;
         padding-top: 0 !important;
+    }
+
+    /* Đảm bảo chữ không bị đẩy xuống */
+    .slider-item .text {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* Giảm khoảng trống body trên mobile */
+    body {
+        padding-top: 80px !important;
     }
 }
     </style>
