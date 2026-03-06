@@ -72,15 +72,24 @@ body {
     min-height: 600px !important;
 }
 
-/* Giảm khoảng trống trên mobile */
+/* Giảm khoảng trắng dư trên mobile ở phần slider */
 @media (max-width: 767px) {
     .slider-item .text {
-        padding-top: 40px !important;
+        padding-top: 10px !important;
+        margin-top: 0 !important;
     }
+
     .slider-item .container {
         padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .home-slider,
+    .slider-item {
+        min-height: 450px !important; /* giảm chiều cao cho mobile */
     }
 }
+
 
     </style>
 
