@@ -45,14 +45,14 @@ body {
 /* Bỏ full-height mặc định */
 .js-fullheight {
     height: auto !important;
-    min-height: auto !important;
+    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
 }
 
 /* Slider không ép 100vh */
 .home-slider,
 .slider-item {
     height: auto !important;
-    min-height: 600px !important;
+    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
 }
 
 /* Luôn hiển thị chữ MENU */
@@ -64,15 +64,16 @@ body {
 /* FIX KHOẢNG TRẮNG LỚN TRÊN MOBILE */
 @media (max-width: 767px) {
 
-    /* Đây là class gây lỗi thật sự */
+    /* Class gây lỗi thật sự */
     .slider-item .one-third .slider-text {
         padding-top: 20px !important;
         margin-top: 0 !important;
     }
 
-    /* Giảm chiều cao slider cho mobile */
+    /* Giảm chiều cao slider cho mobile nhưng KHÔNG được thấp quá */
     .slider-item,
-    .home-slider {
+    .home-slider,
+    .js-fullheight {
         min-height: 450px !important;
         padding-top: 0 !important;
     }
