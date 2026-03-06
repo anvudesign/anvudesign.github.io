@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	  <style>
-  /* MENU DÍNH TRÊN ĐẦU & KHÔNG CHẶN SCROLL */
+ /* MENU DÍNH TRÊN ĐẦU & KHÔNG CHẶN SCROLL */
 
 /* Navbar luôn dính trên đầu */
 .ftco-navbar-light {
@@ -35,7 +35,7 @@
 
 /* Chừa khoảng trống cho navbar để không che nội dung */
 body {
-    padding-top: 70px;
+    padding-top: 120px;
 }
 
 /* Menu xổ xuống không chiếm full màn hình */
@@ -55,12 +55,14 @@ body {
 .slider-item {
     height: auto !important;
 }
-	/* Luôn hiển thị chữ MENU dù có scroll */
+
+/* Luôn hiển thị chữ MENU dù có scroll */
 .ftco-navbar-light .navbar-toggler,
 .ftco-navbar-light.scrolled .navbar-toggler {
     color: #fff !important;
 }
- /* Fix ảnh slider bị mất */
+
+/* Fix ảnh slider bị mất */
 .js-fullheight {
     min-height: 600px !important;
 }
@@ -70,10 +72,12 @@ body {
     min-height: 600px !important;
 }
 
-/* Chừa chỗ cho navbar fixed */
-body {
-    padding-top: 120px;
-
+/* Giảm khoảng trống trên mobile */
+@media (max-width: 767px) {
+    body {
+        padding-top: 80px !important;
+    }
+}
     </style>
 
   </head>
