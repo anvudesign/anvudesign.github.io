@@ -720,18 +720,15 @@ Service CO., LTD</span>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   
-<script>
-    // Khi click vào 1 mục menu → tự đóng menu
-    const navLinks = document.querySelectorAll('#ftco-nav .nav-link');
+<script src="js/main.js"></script>
 
-    navLinks.forEach(link => {
+<script>
+    document.querySelectorAll('#ftco-nav .nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            // Đóng menu Bootstrap
             $('.navbar-collapse').collapse('hide');
         });
     });
 </script>
-
 
 
   </body>
