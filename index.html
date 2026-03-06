@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	  <style>
- /* MENU DÍNH TRÊN ĐẦU */
+	  <style>/* ============================
+   NAVBAR FIXED
+============================ */
 .ftco-navbar-light {
     position: fixed !important;
     top: 0;
@@ -31,7 +32,6 @@
     z-index: 1000;
 }
 
-/* Chừa chỗ cho navbar */
 body {
     padding-top: 120px;
 }
@@ -42,87 +42,61 @@ body {
     overflow-y: auto !important;
 }
 
-/* Bỏ full-height mặc định */
+/* ============================
+   SLIDER DESKTOP
+============================ */
 .js-fullheight {
     height: auto !important;
     min-height: 600px !important;
 }
 
-/* Slider không ép 100vh */
 .home-slider,
 .slider-item {
     height: auto !important;
     min-height: 600px !important;
 }
 
-/* Luôn hiển thị chữ MENU */
-.ftco-navbar-light .navbar-toggler,
-.ftco-navbar-light.scrolled .navbar-toggler {
-    color: #fff !important;
-}
-
 /* ============================
-   FIX MOBILE
+   MOBILE FIX — CHUẨN NHẤT
 ============================ */
 @media (max-width: 767px) {
 
-    /* Giảm khoảng trống body */
+    /* Giảm khoảng trống cho navbar */
     body {
         padding-top: 80px !important;
     }
 
     /* Tắt Scrollax đẩy chữ xuống */
     .slider-item .one-forth[data-scrollax] {
-        transform: translateY(0) !important;
+        transform: none !important;
     }
 
     /* Tắt animation đẩy chữ xuống */
     .slider-item .one-forth.ftco-animate {
         opacity: 1 !important;
-        transform: translateY(0) !important;
+        transform: none !important;
         animation: none !important;
     }
 
-    /* ĐẨY CHỮ LÊN CAO HƠN */
+    /* Đưa chữ lên đầu cột thay vì giữa */
+    .slider-item .one-forth {
+        align-items: flex-start !important;
+    }
+
+    /* Đưa chữ vào lại khung slider */
     .slider-item .one-forth .text {
-        margin-top: -120px !important;
+        margin-top: 0 !important;
+        padding-top: 40px !important;
     }
 
     /* Giảm chiều cao slider cho mobile */
     .slider-item,
     .home-slider,
     .js-fullheight {
-        min-height: 450px !important;
+        min-height: 480px !important;
         padding-top: 0 !important;
     }
 }
-
-		  @media (max-width: 767px) {
-
-    /* Tắt Scrollax hoàn toàn */
-    .slider-item .one-forth[data-scrollax] {
-        transform: none !important;
-    }
-
-    /* Tắt animation */
-    .slider-item .one-forth.ftco-animate {
-        opacity: 1 !important;
-        transform: none !important;
-        animation: none !important;
-    }
-
-    /* Đưa chữ lên đầu cột */
-    .slider-item .one-forth {
-        align-items: flex-start !important;
-    }
-
-    /* Đẩy chữ lên lại trong khung */
-    .slider-item .one-forth .text {
-        margin-top: 0 !important;
-        padding-top: 20px !important;
-    }
-}
-
     </style>
 
   </head>
@@ -212,7 +186,7 @@ body {
 		            	<li class="d-flex"><span>Date of birth:</span> <span>May 23, 1993</span></li>
 		            	<li class="d-flex"><span>Address:</span> <span>Granly Alle 26, 6710 Esbjerg V</span></li>
 		            	<li class="d-flex"><span>Email:</span> <span>vuhoanghoaian1@gmail.com</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>+45 81-95-41-46</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+45 81954146</span></li>
 		            </ul>
 		          </div>
 		        </div>
