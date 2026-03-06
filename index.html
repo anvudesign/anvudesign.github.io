@@ -40,7 +40,6 @@ body {
 
 /* Menu xổ xuống không chiếm full màn hình */
 #ftco-nav {
-    height: auto !important;
     max-height: calc(100vh - 70px) !important;
     overflow-y: auto !important;
 }
@@ -721,17 +720,20 @@ Service CO., LTD</span>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   
-  <script src="js/main.js"></script>
-    <!-- nội dung trang -->
+<script>
+    // Khi click vào 1 mục menu → tự đóng menu
+    const navLinks = document.querySelectorAll('#ftco-nav .nav-link');
+    const navbarCollapse = document.querySelector('#ftco-nav');
 
-    <script>
-        const menuBtn = document.querySelector('.menu-btn');
-        const navMenu = document.querySelector('.nav-menu');
-
-        menuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                $('.navbar-collapse').collapse('hide');
+            }
         });
-    </script>
+    });
+</script>
+
 
   </body>
 </html>
