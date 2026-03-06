@@ -96,6 +96,33 @@ body {
         padding-top: 0 !important;
     }
 }
+
+		  @media (max-width: 767px) {
+
+    /* Tắt Scrollax hoàn toàn */
+    .slider-item .one-forth[data-scrollax] {
+        transform: none !important;
+    }
+
+    /* Tắt animation */
+    .slider-item .one-forth.ftco-animate {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    /* Đưa chữ lên đầu cột */
+    .slider-item .one-forth {
+        align-items: flex-start !important;
+    }
+
+    /* Đẩy chữ lên lại trong khung */
+    .slider-item .one-forth .text {
+        margin-top: 0 !important;
+        padding-top: 20px !important;
+    }
+}
+
     </style>
 
   </head>
