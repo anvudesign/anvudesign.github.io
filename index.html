@@ -21,6 +21,32 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	  <style>
+        /* Ẩn menu mặc định */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #000;
+    transition: 0.3s ease;
+    overflow-y: auto; /* Cho phép scroll trong menu */
+    padding: 20px 0;
+}
+
+/* Khi mở menu */
+.nav-menu.active {
+    right: 0;
+}
+
+/* Menu item gọn hơn */
+.nav-menu li {
+    padding: 12px 20px;
+    font-size: 18px;
+}
+    </style>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -684,6 +710,16 @@ Service CO., LTD</span>
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+    <!-- nội dung trang -->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
   </body>
 </html>
