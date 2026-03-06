@@ -22,52 +22,36 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	  <style>
-        /* Ẩn menu mặc định */
-.nav-menu {
-    position: fixed;
+  /* MENU DÍNH TRÊN ĐẦU & KHÔNG CHẶN SCROLL */
+
+/* Navbar luôn dính trên đầu */
+.ftco-navbar-light {
+    position: fixed !important;
     top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: #000;
-    transition: 0.3s ease;
-    overflow-y: auto; /* Cho phép scroll trong menu */
-    padding: 20px 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Khi mở menu */
-.nav-menu.active {
-    right: 0;
+/* Chừa khoảng trống cho navbar để không che nội dung */
+body {
+    padding-top: 70px;
 }
 
-/* Menu item gọn hơn */
-.nav-menu li {
-    padding: 12px 20px;
-    font-size: 18px;
-}
-
-		  /* FIX LỖI KHÔNG SCROLL ĐƯỢC TRÊN ĐIỆN THOẠI (Colorlib template) */
-
-/* 1. Menu gốc không còn phủ toàn màn hình */
+/* Menu xổ xuống không chiếm full màn hình */
 #ftco-nav {
     height: auto !important;
-    max-height: 100vh !important;
+    max-height: calc(100vh - 70px) !important;
     overflow-y: auto !important;
-    position: relative !important;
 }
 
-/* 2. Navbar không còn fixed che toàn trang */
-.ftco-navbar-light {
-    position: relative !important;
-}
-
-/* 3. Xóa hiệu ứng full-height gây khóa scroll */
+/* Xóa hiệu ứng full-height gây khóa scroll */
 .js-fullheight {
     height: auto !important;
     min-height: auto !important;
 }
 
-/* 4. Slider không ép 100vh nữa */
+/* Slider không ép 100vh nữa */
 .home-slider,
 .slider-item {
     height: auto !important;
