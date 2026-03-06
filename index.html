@@ -45,14 +45,14 @@ body {
 /* Bỏ full-height mặc định */
 .js-fullheight {
     height: auto !important;
-    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
+    min-height: 600px !important;
 }
 
 /* Slider không ép 100vh */
 .home-slider,
 .slider-item {
     height: auto !important;
-    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
+    min-height: 600px !important;
 }
 
 /* Luôn hiển thị chữ MENU */
@@ -61,51 +61,41 @@ body {
     color: #fff !important;
 }
 
-/* FIX KHOẢNG TRẮNG LỚN TRÊN MOBILE */
+/* ============================
+   FIX MOBILE
+============================ */
 @media (max-width: 767px) {
 
-    /* Class gây lỗi thật sự */
-    .slider-item .one-third .slider-text {
-        padding-top: 20px !important;
-        margin-top: 0 !important;
+    /* Giảm khoảng trống body */
+    body {
+        padding-top: 80px !important;
     }
 
-    /* Giảm chiều cao slider cho mobile nhưng KHÔNG được thấp quá */
+    /* Tắt Scrollax đẩy chữ xuống */
+    .slider-item .one-forth[data-scrollax] {
+        transform: translateY(0) !important;
+    }
+
+    /* Tắt animation đẩy chữ xuống */
+    .slider-item .one-forth.ftco-animate {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        animation: none !important;
+    }
+
+    /* ĐẨY CHỮ LÊN CAO HƠN */
+    .slider-item .one-forth .text {
+        margin-top: -120px !important;
+    }
+
+    /* Giảm chiều cao slider cho mobile */
     .slider-item,
     .home-slider,
     .js-fullheight {
         min-height: 450px !important;
         padding-top: 0 !important;
     }
-
-    /* Đảm bảo chữ không bị đẩy xuống */
-    .slider-item .text {
-        padding-top: 0 !important;
-        margin-top: 0 !important;
-    }
-
-    /* Giảm khoảng trống body trên mobile */
-    body {
-        padding-top: 80px !important;
-    }
 }
-		  @media (max-width: 767px) {
-
-    /* Tắt animation đẩy chữ xuống */
-    .slider-text.ftco-animate {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-        animation: none !important;
-    }
-
-    /* Đẩy chữ lên cao hơn */
-    .slider-item .one-third .slider-text {
-        padding-top: 0 !important;
-        margin-top: -120px !important;
-    }
-}
-
-
     </style>
 
   </head>
