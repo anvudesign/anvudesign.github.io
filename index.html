@@ -22,9 +22,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	  <style>
- /* MENU DÍNH TRÊN ĐẦU & KHÔNG CHẶN SCROLL */
-
-/* Navbar luôn dính trên đầu */
+ /* MENU DÍNH TRÊN ĐẦU */
 .ftco-navbar-light {
     position: fixed !important;
     top: 0;
@@ -33,7 +31,7 @@
     z-index: 1000;
 }
 
-/* Chừa khoảng trống cho navbar để không che nội dung */
+/* Chừa chỗ cho navbar */
 body {
     padding-top: 120px;
 }
@@ -44,39 +42,30 @@ body {
     overflow-y: auto !important;
 }
 
-/* Xóa hiệu ứng full-height gây khóa scroll */
+/* Bỏ full-height mặc định */
 .js-fullheight {
     height: auto !important;
     min-height: auto !important;
 }
 
-/* Slider không ép 100vh nữa */
+/* Slider không ép 100vh */
 .home-slider,
 .slider-item {
     height: auto !important;
+    min-height: 600px !important;
 }
 
-/* Luôn hiển thị chữ MENU dù có scroll */
+/* Luôn hiển thị chữ MENU */
 .ftco-navbar-light .navbar-toggler,
 .ftco-navbar-light.scrolled .navbar-toggler {
     color: #fff !important;
 }
 
-/* Fix ảnh slider bị mất */
-.js-fullheight {
-    min-height: 600px !important;
-}
-
-.home-slider,
-.slider-item {
-    min-height: 600px !important;
-}
-
-/* Fix khoảng trắng lớn trên mobile */
+/* FIX KHOẢNG TRẮNG LỚN TRÊN MOBILE */
 @media (max-width: 767px) {
 
     /* Đây là class gây lỗi thật sự */
-    .slider-text {
+    .slider-item .one-third .slider-text {
         padding-top: 20px !important;
         margin-top: 0 !important;
     }
@@ -93,8 +82,12 @@ body {
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
-}
 
+    /* Giảm khoảng trống body trên mobile */
+    body {
+        padding-top: 80px !important;
+    }
+}
     </style>
 
   </head>
