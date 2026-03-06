@@ -723,16 +723,15 @@ Service CO., LTD</span>
 <script>
     // Khi click vào 1 mục menu → tự đóng menu
     const navLinks = document.querySelectorAll('#ftco-nav .nav-link');
-    const navbarCollapse = document.querySelector('#ftco-nav');
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (navbarCollapse.classList.contains('show')) {
-                $('.navbar-collapse').collapse('hide');
-            }
+            // Đóng menu Bootstrap
+            $('.navbar-collapse').collapse('hide');
         });
     });
 </script>
+
 
 
   </body>
