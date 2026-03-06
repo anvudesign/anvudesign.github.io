@@ -90,11 +90,21 @@ body {
     }
 }
 		  @media (max-width: 767px) {
+
+    /* Tắt animation đẩy chữ xuống */
+    .slider-text.ftco-animate {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        animation: none !important;
+    }
+
+    /* Đẩy chữ lên cao hơn */
     .slider-item .one-third .slider-text {
         padding-top: 0 !important;
-        margin-top: -110px !important; /* đẩy chữ lên */
+        margin-top: -120px !important;
     }
 }
+
 
     </style>
 
