@@ -162,26 +162,25 @@ body {
 }
 
 /* ============================
-   SERVICE BOX – GOLD PREMIUM
+   SERVICE BOX – DARK PREMIUM
    ============================ */
 
-.service-box.gold {
-    background: #f5c542; /* vàng gold */
-    border: 1px solid #000;
+.service-box.dark {
+    background: #0f0f0f; /* nền đen sang */
+    border: 1px solid #f5c542; /* viền vàng */
     padding: 40px 25px;
     border-radius: 12px;
     width: 100%;
     text-align: center;
     transition: all .35s ease;
-    color: #111; /* chữ đen */
-    position: relative;
+    color: #fff;
 }
 
-/* Hover effect */
-.service-box.gold:hover {
-    background: #e0b234; /* vàng đậm hơn */
+.service-box.dark:hover {
+    background: #1a1a1a;
     transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+    border-color: #ffdb6e; /* vàng sáng hơn khi hover */
 }
 
 /* ============================
@@ -193,8 +192,8 @@ body {
     height: 70px;
     margin: 0 auto 20px;
     border-radius: 50%;
-    background: #111; /* nền đen để icon metallic nổi */
-    border: 1px solid #000;
+    background: #111;
+    border: 1px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,16 +207,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 
 /* Hover: icon metallic vàng */
-.service-box.gold:hover .icon-wrap {
-    background: #fff;
-    border-color: #000;
-}
-
-.service-box.gold:hover .icon-wrap i {
+.service-box.dark:hover .icon-wrap i {
     background: linear-gradient(135deg, #f5d67a, #e0b234, #f5d67a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -232,34 +226,14 @@ body {
     font-weight: 700;
     margin-bottom: 12px;
     text-transform: uppercase;
-    color: #111;
+    color: #f5c542; /* tiêu đề vàng */
     letter-spacing: 1px;
 }
 
 .service-desc {
     font-size: 14px;
-    color: #222;
-    margin-bottom: 20px;
-}
-
-/* ============================
-   DECOR LINE
-   ============================ */
-
-.decor-line {
-    width: 40px;
-    height: 3px;
-    background: #111;
-    display: block;
-    margin: 0 auto;
-    border-radius: 2px;
-    opacity: .8;
-    transition: .3s;
-}
-
-.service-box.gold:hover .decor-line {
-    width: 60px;
-    opacity: 1;
+    color: #ccc;
+    margin-bottom: 0;
 }
     </style>
 
@@ -496,47 +470,47 @@ body {
 
         <div class="row">
 
+            <!-- 1 -->
             <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <a href="services-printing.html" class="service-box gold">
+                <a href="services-printing.html" class="service-box dark">
                     <div class="icon-wrap">
                         <i class="fa-solid fa-print"></i>
                     </div>
                     <h3 class="service-title">Graphic Design & Printing</h3>
                     <p class="service-desc">2D design, printing, signage, decals, albums & more.</p>
-                    <span class="decor-line"></span>
                 </a>
             </div>
 
+            <!-- 2 -->
             <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <a href="services-branding.html" class="service-box gold">
+                <a href="services-branding.html" class="service-box dark">
                     <div class="icon-wrap">
                         <i class="fa-solid fa-gem"></i>
                     </div>
                     <h3 class="service-title">Branding & Identity</h3>
                     <p class="service-desc">Logo, brand identity, marketing materials & consulting.</p>
-                    <span class="decor-line"></span>
                 </a>
             </div>
 
+            <!-- 3 -->
             <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <a href="services-illustration.html" class="service-box gold">
+                <a href="services-illustration.html" class="service-box dark">
                     <div class="icon-wrap">
                         <i class="fa-solid fa-paintbrush"></i>
                     </div>
                     <h3 class="service-title">Illustration & Art</h3>
                     <p class="service-desc">Manga, chibi, creative visuals for social media.</p>
-                    <span class="decor-line"></span>
                 </a>
             </div>
 
+            <!-- 4 -->
             <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <a href="services-support.html" class="service-box gold">
+                <a href="services-support.html" class="service-box dark">
                     <div class="icon-wrap">
                         <i class="fa-solid fa-pen-to-square"></i>
                     </div>
                     <h3 class="service-title">Design Support & Writing</h3>
                     <p class="service-desc">File checking, editing, source files & ad copywriting.</p>
-                    <span class="decor-line"></span>
                 </a>
             </div>
 
