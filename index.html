@@ -160,7 +160,11 @@ body {
 .resume-item strong {
   color: #f7c600;
 }
-/* PHẦN CSS CHO SERVICES */
+
+/* ============================
+   SERVICE BOX – GOLD PREMIUM
+   ============================ */
+
 .service-box.gold {
     background: #f5c542; /* vàng gold */
     border: 1px solid #000;
@@ -170,40 +174,58 @@ body {
     text-align: center;
     transition: all .35s ease;
     color: #111; /* chữ đen */
+    position: relative;
 }
 
+/* Hover effect */
 .service-box.gold:hover {
     background: #e0b234; /* vàng đậm hơn */
     transform: translateY(-10px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.45);
 }
 
+/* ============================
+   ICON WRAP
+   ============================ */
+
 .icon-wrap {
     width: 70px;
     height: 70px;
     margin: 0 auto 20px;
     border-radius: 50%;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #111; /* nền đen để icon metallic nổi */
+    border: 1px solid #000;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .3s;
 }
 
+/* ICON METALLIC SILVER */
 .icon-wrap i {
     font-size: 32px;
-    color: #bfbfbf; /* icon bạc */
+    background: linear-gradient(135deg, #f8f8f8, #cfcfcf, #e6e6e6, #bfbfbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
+/* Hover: icon metallic vàng */
 .service-box.gold:hover .icon-wrap {
-    background: #111;
+    background: #fff;
     border-color: #000;
 }
 
 .service-box.gold:hover .icon-wrap i {
-    color: #f5c542; /* icon vàng khi hover */
+    background: linear-gradient(135deg, #f5d67a, #e0b234, #f5d67a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+/* ============================
+   TITLE & DESCRIPTION
+   ============================ */
 
 .service-title {
     font-size: 17px;
@@ -219,6 +241,10 @@ body {
     color: #222;
     margin-bottom: 20px;
 }
+
+/* ============================
+   DECOR LINE
+   ============================ */
 
 .decor-line {
     width: 40px;
