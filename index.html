@@ -120,9 +120,46 @@ body {
 }
 
 .resume-item strong {
-  color: #f7c600; /* vàng */ /* kết thúc resum */
+  color: #f7c600; /* vàng */
+}
+ /* căn giữa, viền vàng, đổ bóng 4 ô skill */		  
+ .resume-box {
+  background: #111;
+  border: 1px solid rgba(247, 198, 0, 0.3); /* viền vàng nhẹ */
+  padding: 25px;
+  border-radius: 10px;
+  min-height: 420px;
+  color: #ddd;
+  box-shadow: 0 0 12px rgba(247, 198, 0, 0.15); /* đổ bóng vàng nhẹ */
+  text-align: center; /* căn giữa toàn bộ nội dung */
 }
 
+.resume-box .icon {
+  font-size: 48px;
+  color: #f7c600; /* vàng */
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.resume-item {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.resume-item strong {
+  color: #f7c600;
+}
     </style>
 
   </head>
@@ -306,7 +343,7 @@ body {
       <!-- SKILLS -->
       <div class="col-md-6 col-lg-3">
         <div class="resume-box ftco-animate">
-          <div class="icon"><span class="icon-cog"></span></div>
+          <div class="icon"><span class="icon-tools"></span></div>
           <h3 class="resume-title">Skills</h3>
           <p class="resume-item">
             • Print & Advertising Design<br>
