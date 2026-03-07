@@ -234,7 +234,85 @@ body {
  .service-box.minimal {
     text-align: center; /* căn giữa toàn bộ nội dung */
 }
+/* ============================
+   MY EXPERTISE SECTION
+   ============================ */
 
+#expertise-section {
+    background: #020202;
+}
+
+/* Box */
+.expertise-box {
+    background: #050505;
+    border: 1px solid #2a2a2a;
+    padding: 26px 22px;
+    border-radius: 12px;
+    width: 100%;
+    color: #fff;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.expertise-box:hover {
+    border-color: #f5c542;
+    background: #0d0d0d;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+
+/* Small glow line on hover (decor subtle) */
+.expertise-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f5c542, transparent);
+    opacity: 0;
+    transition: .35s ease;
+}
+
+.expertise-box:hover::before {
+    left: 10%;
+    opacity: 1;
+}
+
+/* Icon */
+.expertise-icon {
+    font-size: 26px;
+    display: block;
+    margin: 0 auto 16px auto;
+    text-align: center;
+    color: #e6e6e6;
+    transition: .3s ease;
+}
+
+/* Icon hover color */
+.expertise-box:hover .expertise-icon {
+    color: #f5c542;
+}
+
+/* Title */
+.expertise-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f5c542;
+    letter-spacing: 0.5px;
+}
+
+/* Description */
+.expertise-desc {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
 
     </style>
 
@@ -512,85 +590,74 @@ body {
 </section>
    <!-- KẾT THÚC PHẦN SERVICE-->
 		
-		<section class="ftco-section" id="skills-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Skills</h1>
-            <h2 class="mb-4">My Skills</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
+		<section class="ftco-section" id="expertise-section">
+    <div class="container">
+
+        <div class="row justify-content-center py-5 mt-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Expertise</h1>
+                <h2 class="mb-4 text-uppercase" style="letter-spacing:2px;">My Expertise</h2>
+                <p class="text-muted">
+                    A brief overview of the areas I work with most confidently and consistently.
+                </p>
+            </div>
         </div>
-				<div class="row">
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Microsoft Office</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							    <span>70%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>CorelDRAW</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Adobe Photoshop</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							    <span>70%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Adobe Ilustrator</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-							    <span>65%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Website</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-							    <span>65%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>English</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-							    <span>65%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+
+        <div class="row">
+
+            <!-- CorelDRAW – main strength -->
+            <div class="col-md-6 col-lg-6 d-flex ftco-animate">
+                <div class="expertise-box">
+                    <i class="fa-solid fa-pen-nib expertise-icon"></i>
+                    <h3 class="expertise-title">CorelDRAW – My Main Strength</h3>
+                    <p class="expertise-desc">
+                        I use CorelDRAW as my primary tool in most design projects. I am confident with layout,
+                        vector work, print preparation, color optimization, and preparing files for different
+                        printed products.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Design & image handling -->
+            <div class="col-md-6 col-lg-6 d-flex ftco-animate">
+                <div class="expertise-box">
+                    <i class="fa-solid fa-wand-magic-sparkles expertise-icon"></i>
+                    <h3 class="expertise-title">Design & Image Handling</h3>
+                    <p class="expertise-desc">
+                        I use Photoshop and Illustrator to edit, refine, and finalize graphic elements.
+                        They support my main work in CorelDRAW and help me handle the details needed
+                        throughout the design process.
+                    </p>
+                </div>
+            </div>
+
+            <!-- File export & output -->
+            <div class="col-md-6 col-lg-6 d-flex ftco-animate">
+                <div class="expertise-box">
+                    <i class="fa-solid fa-file-export expertise-icon"></i>
+                    <h3 class="expertise-title">File Export & Output Preparation</h3>
+                    <p class="expertise-desc">
+                        I can export files in various formats for print, digital use, advertising, and social media.
+                        I focus on clean files, correct specifications, and formats that are easy for others to work with.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Website & supporting skills -->
+            <div class="col-md-6 col-lg-6 d-flex ftco-animate">
+                <div class="expertise-box">
+                    <i class="fa-solid fa-globe expertise-icon"></i>
+                    <h3 class="expertise-title">Website & Supporting Skills</h3>
+                    <p class="expertise-desc">
+                        I have basic knowledge of websites and related tools, which helps me stay flexible in different
+                        projects. I enjoy learning, exploring new methods, and improving my skills to match real-world needs.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
  
 
     <section class="ftco-section ftco-project" id="projects-section">
