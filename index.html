@@ -161,39 +161,79 @@ body {
   color: #f7c600;
 }
 /* PHẦN CSS CHO SERVICES */
-	.service-box {
-    background: #111;
-    border: 1px solid #222;
-    padding: 35px 25px;
-    border-radius: 10px;
+.service-box.gold {
+    background: #f5c542; /* vàng gold */
+    border: 1px solid #000;
+    padding: 40px 25px;
+    border-radius: 12px;
     width: 100%;
-    transition: all .3s ease;
-    color: #fff;
+    text-align: center;
+    transition: all .35s ease;
+    color: #111; /* chữ đen */
 }
 
-.service-box:hover {
-    background: #1a1a1a;
-    border-color: #f5c542;
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+.service-box.gold:hover {
+    background: #e0b234; /* vàng đậm hơn */
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
 }
 
-.service-box .icon i {
-    font-size: 40px;
-    color: #f5c542;
+.icon-wrap {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.icon-wrap i {
+    font-size: 32px;
+    color: #bfbfbf; /* icon bạc */
+}
+
+.service-box.gold:hover .icon-wrap {
+    background: #111;
+    border-color: #000;
+}
+
+.service-box.gold:hover .icon-wrap i {
+    color: #f5c542; /* icon vàng khi hover */
 }
 
 .service-title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     text-transform: uppercase;
+    color: #111;
     letter-spacing: 1px;
 }
 
 .service-desc {
     font-size: 14px;
-    color: #ccc;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.decor-line {
+    width: 40px;
+    height: 3px;
+    background: #111;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+    opacity: .8;
+    transition: .3s;
+}
+
+.service-box.gold:hover .decor-line {
+    width: 60px;
+    opacity: 1;
 }
     </style>
 
@@ -420,7 +460,6 @@ body {
    <section class="ftco-section" id="services-section">
     <div class="container">
 
-        <!-- Heading -->
         <div class="row justify-content-center py-5 mt-5">
             <div class="col-md-12 heading-section text-center ftco-animate">
                 <h1 class="big big-2">Services</h1>
@@ -429,56 +468,56 @@ body {
             </div>
         </div>
 
-        <!-- Service Boxes -->
         <div class="row">
 
-            <!-- 1. Graphic Design & Printing -->
-            <div class="col-md-6 col-lg-3 text-center d-flex ftco-animate">
-                <a href="services-printing.html" class="service-box">
-                    <span class="icon mb-4">
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <a href="services-printing.html" class="service-box gold">
+                    <div class="icon-wrap">
                         <i class="fa-solid fa-print"></i>
-                    </span>
+                    </div>
                     <h3 class="service-title">Graphic Design & Printing</h3>
                     <p class="service-desc">2D design, printing, signage, decals, albums & more.</p>
+                    <span class="decor-line"></span>
                 </a>
             </div>
 
-            <!-- 2. Branding & Identity -->
-            <div class="col-md-6 col-lg-3 text-center d-flex ftco-animate">
-                <a href="services-branding.html" class="service-box">
-                    <span class="icon mb-4">
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <a href="services-branding.html" class="service-box gold">
+                    <div class="icon-wrap">
                         <i class="fa-solid fa-gem"></i>
-                    </span>
+                    </div>
                     <h3 class="service-title">Branding & Identity</h3>
                     <p class="service-desc">Logo, brand identity, marketing materials & consulting.</p>
+                    <span class="decor-line"></span>
                 </a>
             </div>
 
-            <!-- 3. Illustration & Creative Art -->
-            <div class="col-md-6 col-lg-3 text-center d-flex ftco-animate">
-                <a href="services-illustration.html" class="service-box">
-                    <span class="icon mb-4">
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <a href="services-illustration.html" class="service-box gold">
+                    <div class="icon-wrap">
                         <i class="fa-solid fa-paintbrush"></i>
-                    </span>
+                    </div>
                     <h3 class="service-title">Illustration & Art</h3>
                     <p class="service-desc">Manga, chibi, creative visuals for social media.</p>
+                    <span class="decor-line"></span>
                 </a>
             </div>
 
-            <!-- 4. Design Support & Copywriting -->
-            <div class="col-md-6 col-lg-3 text-center d-flex ftco-animate">
-                <a href="services-support.html" class="service-box">
-                    <span class="icon mb-4">
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <a href="services-support.html" class="service-box gold">
+                    <div class="icon-wrap">
                         <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
+                    </div>
                     <h3 class="service-title">Design Support & Writing</h3>
                     <p class="service-desc">File checking, editing, source files & ad copywriting.</p>
+                    <span class="decor-line"></span>
                 </a>
             </div>
 
         </div>
     </div>
 </section>
+
    <!-- KẾT THÚC PHẦN SERVICE-->
 		
 		<section class="ftco-section" id="skills-section">
