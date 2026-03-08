@@ -272,13 +272,17 @@ body {
         margin: 16px;
     }
 }
-/* HERO LAYOUT KIỂU HUDSON – GIỮ MÀU VÀNG */
+/* ============================
+   HERO LAYOUT KIỂU HUDSON
+   (KHÔNG ĐỤNG VÀO FONT)
+   ============================ */
+
 .hero {
     padding: 100px 0 80px 0;
 }
 
 .hero .text {
-    color: #fff;
+    color: #fff; /* giữ nguyên màu chữ cũ */
 }
 
 .hero .subheading {
@@ -289,7 +293,7 @@ body {
 }
 
 .hero h1 span {
-    color: #f7c600; /* TÊN MÀU VÀNG */
+    color: #f7c600; /* tên màu vàng */
 }
 
 .hero-image {
@@ -298,6 +302,18 @@ body {
     background-size: cover;
     background-position: center right;
     border-radius: 12px;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-image {
+        height: 380px;
+        margin-top: 30px;
+    }
 }
 		  
     </style>
@@ -334,8 +350,8 @@ body {
             <!-- TEXT BÊN TRÁI -->
             <div class="col-md-6 ftco-animate">
                 <div class="text">
-                    <span class="subheading" style="color:#f7c600;">HELLO!</span>
-                    <h1 class="mb-4 mt-3">My name is <span style="color:#f7c600;">VŨ HOÀNG HOÀI AN</span></h1>
+                    <span class="subheading">HELLO!</span>
+                    <h1 class="mb-4 mt-3">My name is <span>VŨ HOÀNG HOÀI AN</span></h1>
                     <h2 class="mb-4">A Freelance Graphic Designer</h2>
 
                     <p>
@@ -353,7 +369,6 @@ body {
         </div>
     </div>
 </section>
-
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
     		<div class="row d-flex">
