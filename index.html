@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	  <style>
-/* MENU DÍNH TRÊN ĐẦU */
+/* ============================
+   NAVBAR CỐ ĐỊNH TRÊN ĐẦU
+   ============================ */
 .ftco-navbar-light {
     position: fixed !important;
     top: 0;
@@ -32,9 +34,9 @@
     z-index: 1000;
 }
 
-/* Chừa chỗ cho navbar */
+/* Chừa khoảng cho navbar */
 body {
-    padding-top: 120px;
+    padding-top: 70px; /* giảm từ 120px → 70px */
 }
 
 /* Menu xổ xuống không chiếm full màn hình */
@@ -43,17 +45,16 @@ body {
     overflow-y: auto !important;
 }
 
-/* Bỏ full-height mặc định */
-.js-fullheight {
-    height: auto !important;
-    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
-}
+/* ============================
+   SLIDER / HERO SECTION
+   ============================ */
 
-/* Slider không ép 100vh */
+/* Bỏ full-height mặc định của template */
+.js-fullheight,
 .home-slider,
 .slider-item {
     height: auto !important;
-    min-height: 600px !important; /* GIỮ 600px để ảnh không biến mất */
+    min-height: 450px !important; /* gọn hơn 600px */
 }
 
 /* Luôn hiển thị chữ MENU */
@@ -62,16 +63,18 @@ body {
     color: #fff !important;
 }
 
-/* FIX KHOẢNG TRẮNG LỚN TRÊN MOBILE */
+/* ============================
+   MOBILE FIXES
+   ============================ */
 @media (max-width: 767px) {
 
-    /* Class gây lỗi thật sự */
+    /* Fix class gây đẩy chữ xuống */
     .slider-item .one-third .slider-text {
         padding-top: 20px !important;
         margin-top: 0 !important;
     }
 
-    /* Giảm chiều cao slider cho mobile nhưng KHÔNG được thấp quá */
+    /* Slider thấp hơn trên mobile */
     .slider-item,
     .home-slider,
     .js-fullheight {
@@ -79,87 +82,58 @@ body {
         padding-top: 0 !important;
     }
 
-    /* Đảm bảo chữ không bị đẩy xuống */
+    /* Chữ không bị đẩy xuống */
     .slider-item .text {
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
 
-    /* Giảm khoảng trống body trên mobile */
+    /* Giảm khoảng trống body */
     body {
         padding-top: 80px !important;
     }
 }
-/* phần này dùng để hiệu chỉnh màu này nọ cho phần resume */
- .resume-box {
-  background: #111;
-  border: 1px solid #333;
-  padding: 25px;
-  border-radius: 8px;
-  min-height: 420px; /* giúp 4 ô đều nhau */
-  color: #ddd;
+
+/* ============================
+   RESUME BOX
+   ============================ */
+
+.resume-box {
+    background: #111;
+    border: 1px solid rgba(247, 198, 0, 0.3);
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 420px;
+    color: #ddd;
+    box-shadow: 0 0 12px rgba(247, 198, 0, 0.15);
+    text-align: center;
 }
 
 .resume-box .icon {
-  font-size: 40px;
-  color: #f7c600; /* vàng */
-  margin-bottom: 15px;
+    font-size: 48px;
+    color: #f7c600;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 .resume-item {
-  font-size: 15px;
-  color: #ccc;
-  margin-bottom: 15px;
-  line-height: 1.5;
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 .resume-item strong {
-  color: #f7c600; /* vàng */
-}
- /* căn giữa, viền vàng, đổ bóng 4 ô skill */		  
- .resume-box {
-  background: #111;
-  border: 1px solid rgba(247, 198, 0, 0.3); /* viền vàng nhẹ */
-  padding: 25px;
-  border-radius: 10px;
-  min-height: 420px;
-  color: #ddd;
-  box-shadow: 0 0 12px rgba(247, 198, 0, 0.15); /* đổ bóng vàng nhẹ */
-  text-align: center; /* căn giữa toàn bộ nội dung */
-}
-
-.resume-box .icon {
-  font-size: 48px;
-  color: #f7c600; /* vàng */
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.resume-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.resume-item {
-  font-size: 15px;
-  color: #ccc;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.resume-item strong {
-  color: #f7c600;
+    color: #f7c600;
 }
 
 /* ============================
@@ -168,17 +142,16 @@ body {
 
 .service-box.minimal {
     background: #050505;
-    border: 1px solid #2a2a2a; /* viền nhẹ */
+    border: 1px solid #2a2a2a;
     padding: 28px 22px;
     border-radius: 12px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     transition: all .3s ease;
     color: #fff;
     display: block;
 }
 
-/* Hover: viền vàng + nền sáng hơn */
 .service-box.minimal:hover {
     border-color: #f5c542;
     background: #0d0d0d;
@@ -186,36 +159,28 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.55);
 }
 
-/* ============================
-   ICON – METALLIC SILVER
-   ============================ */
-
+/* Icon metallic */
 .service-icon {
     font-size: 28px;
-    margin-bottom: 18px;
-    display: inline-block;
+    margin: 0 auto 18px auto;
+    display: block;
     background: linear-gradient(135deg, #ffffff, #dcdcdc, #f2f2f2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* Hover: icon metallic vàng */
 .service-box.minimal:hover .service-icon {
     background: linear-gradient(135deg, #f5d67a, #e0b234, #f5d67a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* ============================
-   TITLE & DESCRIPTION
-   ============================ */
-
 .service-title {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: #f5c542; /* vàng */
+    color: #f5c542;
     letter-spacing: 0.5px;
 }
 
@@ -225,24 +190,14 @@ body {
     margin-bottom: 0;
 }
 
- .service-icon {
-    display: block;
-    margin: 0 auto 18px auto; /* căn giữa icon */
-    text-align: center;
-}
-
- .service-box.minimal {
-    text-align: center; /* căn giữa toàn bộ nội dung */
-}
 /* ============================
-   MY EXPERTISE SECTION
+   EXPERTISE SECTION
    ============================ */
 
 #expertise-section {
     background: #020202;
 }
 
-/* Box */
 .expertise-box {
     background: #050505;
     border: 1px solid #2a2a2a;
@@ -253,9 +208,9 @@ body {
     transition: all .3s ease;
     position: relative;
     overflow: hidden;
+    margin: 12px;
 }
 
-/* Hover effect */
 .expertise-box:hover {
     border-color: #f5c542;
     background: #0d0d0d;
@@ -263,7 +218,7 @@ body {
     box-shadow: 0 12px 28px rgba(0,0,0,0.6);
 }
 
-/* Small glow line on hover (decor subtle) */
+/* Glow line */
 .expertise-box::before {
     content: "";
     position: absolute;
@@ -281,7 +236,6 @@ body {
     opacity: 1;
 }
 
-/* Icon */
 .expertise-icon {
     font-size: 26px;
     display: block;
@@ -291,12 +245,10 @@ body {
     transition: .3s ease;
 }
 
-/* Icon hover color */
 .expertise-box:hover .expertise-icon {
     color: #f5c542;
 }
 
-/* Title */
 .expertise-title {
     font-size: 16px;
     font-weight: 700;
@@ -304,43 +256,22 @@ body {
     text-transform: uppercase;
     color: #f5c542;
     letter-spacing: 0.5px;
+    text-align: center;
 }
 
-/* Description */
 .expertise-desc {
     font-size: 14px;
     color: #c7c7c7;
     margin-bottom: 0;
     line-height: 1.6;
 }
-/* Căn giữa tiêu đề vàng */
-.expertise-title {
-    text-align: center;
-}
 
-/* Giãn khoảng cách giữa các ô */
-.expertise-box {
-    margin: 12px; /* tạo khoảng cách đều 4 phía */
-}
-
-/* Nếu muốn giãn mạnh hơn (tùy bạn) */
+/* Khoảng cách lớn hơn trên màn hình rộng */
 @media (min-width: 768px) {
     .expertise-box {
         margin: 16px;
     }
 }
- /* Nếu muốn giãn mạnh hơn (tùy bạn) */
-body {
-    padding-top: 70px;
-}
-
-.js-fullheight,
-.slider-item,
-.home-slider {
-    min-height: 450px !important;
-}
-		  
-
     </style>
 
   </head>
