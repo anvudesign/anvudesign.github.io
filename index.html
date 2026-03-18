@@ -343,6 +343,17 @@ body {
     background-position: top center; /* giữ nguyên phần đầu */
 }
 
+.counter-box {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.suffix {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
 
 		  
     </style>
@@ -811,14 +822,17 @@ body {
       </div>
     </section>
 
-   <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
     <div class="container">
         <div class="row d-md-flex align-items-center">
 
             <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text">
-                        <strong class="number" data-number="10">0</strong><span>+</span>
+                        <div class="counter-box">
+                            <strong class="number" data-number="10">0</strong>
+                            <span class="suffix">+</span>
+                        </div>
                         <span>Years of Experience</span>
                     </div>
                 </div>
@@ -827,7 +841,10 @@ body {
             <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text">
-                       <strong class="number" data-number="500">0</strong><span>+</span>
+                        <div class="counter-box">
+                            <strong class="number" data-number="500">0</strong>
+                            <span class="suffix">+</span>
+                        </div>
                         <span>Print Files Prepared</span>
                     </div>
                 </div>
@@ -836,7 +853,10 @@ body {
             <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text">
-                        <strong class="number" data-number="900">0</strong><span>+</span>
+                        <div class="counter-box">
+                            <strong class="number" data-number="900">0</strong>
+                            <span class="suffix">+</span>
+                        </div>
                         <span>Happy Customers</span>
                     </div>
                 </div>
@@ -845,7 +865,10 @@ body {
             <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                     <div class="text">
-                      <strong class="number" data-number="98">0</strong><span>%</span>
+                        <div class="counter-box">
+                            <strong class="number" data-number="98">0</strong>
+                            <span class="suffix">%</span>
+                        </div>
                         <span>Client Satisfaction</span>
                     </div>
                 </div>
