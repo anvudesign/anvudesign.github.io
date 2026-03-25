@@ -357,7 +357,28 @@ body {
     gap: 3px;
     width: 100%;
 }
+ /* blog */
+.blog-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
+.blog-menu li a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.blog-menu li a:hover {
+  border-bottom: 2px solid #000;
+}
 		  
     </style>
 
@@ -757,73 +778,89 @@ body {
     </section>
 
 
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Blog</h1>
-            <h2 class="mb-4">My Blog</h2>
-            <p>My blog highlights practical design tips and small lessons I learn along the way.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">June 21, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Professional & simple</a></h3>
-                <p>My blog is where I share quick insights from my design work — from vector tips in CorelDRAW to image refinement in Photoshop and Illustrator. 
-					Everything here comes from real projects and daily practice.</p>
-              </div>
+  <section class="ftco-section" id="blog-section">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Blog</h1>
+        <h2 class="mb-4">My Blog</h2>
+        <p>My blog highlights practical design tips and small lessons I learn along the way.</p>
+      </div>
+    </div>
+
+    <!-- Category Menu -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8 text-center">
+        <ul class="blog-menu">
+          <li><a href="#" data-filter="danish">Tiếng Đan</a></li>
+          <li><a href="#" data-filter="english">Tiếng Anh</a></li>
+          <li><a href="#" data-filter="design">Design</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Blog Items -->
+    <div class="row d-flex">
+
+      <!-- Blog 1 -->
+      <div class="col-md-4 d-flex ftco-animate blog-item design">
+        <div class="blog-entry justify-content-end">
+          <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0">
+                <span class="mr-2">June 21, 2019</span>
+                <a href="#" class="mr-2">Admin</a>
+                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+              </p>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">June 21, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Print & graphic focused</a></h3>
-                <p>I share practical design tips, file‑prep methods, and workflow tricks that I use in print and graphic projects. 
-					Simple, useful, and based on real work.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">June 21, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Learning & improvement</a></h3>
-                <p>Here I document my design journey — what I’m practicing, improving, and discovering through CorelDRAW, Photoshop, Illustrator, and web tools. 
-					Small posts, steady progress.</p>
-              </div>
-            </div>
+            <h3 class="heading"><a href="single.html">Professional & simple</a></h3>
+            <p>Quick insights from my design work — vector tips, image refinement, and real project workflows.</p>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Blog 2 -->
+      <div class="col-md-4 d-flex ftco-animate blog-item design">
+        <div class="blog-entry justify-content-end">
+          <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0">
+                <span class="mr-2">June 21, 2019</span>
+                <a href="#" class="mr-2">Admin</a>
+                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+              </p>
+            </div>
+            <h3 class="heading"><a href="single.html">Print & graphic focused</a></h3>
+            <p>Practical design tips, file‑prep methods, and workflow tricks from real print projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-md-4 d-flex ftco-animate blog-item design">
+        <div class="blog-entry">
+          <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0">
+                <span class="mr-2">June 21, 2019</span>
+                <a href="#" class="mr-2">Admin</a>
+                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+              </p>
+            </div>
+            <h3 class="heading"><a href="single.html">Learning & improvement</a></h3>
+            <p>Documenting my design journey — what I practice, improve, and discover every day.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
     <div class="container">
@@ -1068,6 +1105,24 @@ body {
     });
 </script>
 
+<script>
+const menuLinks = document.querySelectorAll('.blog-menu a');
+const blogItems = document.querySelectorAll('.blog-item');
 
+menuLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const filter = link.getAttribute('data-filter');
+
+    blogItems.forEach(item => {
+      if (item.classList.contains(filter)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
   </body>
 </html>
