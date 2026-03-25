@@ -357,62 +357,7 @@ body {
     gap: 3px;
     width: 100%;
 }
- /* blog */
-.blog-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
 
-.blog-menu li a {
-  font-weight: 600;
-  color: #000;
-  text-decoration: none;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
-}
-
-.blog-menu li a:hover {
-  border-bottom: 2px solid #000;
-}
-
-	/* ============================
-   FIX NAVBAR HOVER + ACTIVE
-   ============================ */
-
-/* Reset style cũ của template */
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    background: transparent !important;
-}
-
-/* Style mặc định */
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
-    color: rgba(255,255,255,0.85);
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
-    transition: .3s ease;
-}
-
-/* Hover: gạch vàng */
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover span {
-    color: #fbd46d;
-    border-bottom: 2px solid #fbd46d;
-}
-
-/* Active: chữ vàng + gạch vàng */
-.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link span {
-    color: #fbd46d !important;
-    border-bottom: 2px solid #fbd46d !important;
-}
-
-/* Tắt nền vàng cũ của template */
-.ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    background: transparent !important;
-}
 		  
     </style>
 
@@ -1139,24 +1084,6 @@ body {
     });
 </script>
 
-<script>
-const menuLinks = document.querySelectorAll('.blog-menu a');
-const blogItems = document.querySelectorAll('.blog-item');
 
-menuLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const filter = link.getAttribute('data-filter');
-
-    blogItems.forEach(item => {
-      if (item.classList.contains(filter)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  });
-});
-</script>
   </body>
 </html>
