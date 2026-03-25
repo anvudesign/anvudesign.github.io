@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Clark - Free Bootstrap 4 Template by Colorlib</title>
+    <title>AN - Design</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -21,6 +21,328 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	  <style>
+/* ============================
+   NAVBAR CỐ ĐỊNH TRÊN ĐẦU
+   ============================ */
+.ftco-navbar-light {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Chừa khoảng cho navbar */
+body {
+    padding-top: 70px; /* giảm từ 120px → 70px */
+}
+
+/* Menu xổ xuống không chiếm full màn hình */
+#ftco-nav {
+    max-height: calc(100vh - 70px) !important;
+    overflow-y: auto !important;
+}
+
+/* ============================
+   SLIDER / HERO SECTION
+   ============================ */
+
+/* Bỏ full-height mặc định của template */
+.js-fullheight,
+.home-slider,
+.slider-item {
+    height: auto !important;
+    min-height: 450px !important; /* gọn hơn 600px */
+}
+
+/* Luôn hiển thị chữ MENU */
+.ftco-navbar-light .navbar-toggler,
+.ftco-navbar-light.scrolled .navbar-toggler {
+    color: #fff !important;
+}
+
+/* ============================
+   MOBILE FIXES
+   ============================ */
+@media (max-width: 767px) {
+
+    /* Fix class gây đẩy chữ xuống */
+    .slider-item .one-third .slider-text {
+        padding-top: 20px !important;
+        margin-top: 0 !important;
+    }
+
+    /* Slider thấp hơn trên mobile */
+    .slider-item,
+    .home-slider,
+    .js-fullheight {
+        min-height: 450px !important;
+        padding-top: 0 !important;
+    }
+
+    /* Chữ không bị đẩy xuống */
+    .slider-item .text {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* Giảm khoảng trống body */
+    body {
+        padding-top: 80px !important;
+    }
+}
+
+/* ============================
+   RESUME BOX
+   ============================ */
+
+.resume-box {
+    background: #111;
+	margin: 12px;
+    border: 1px solid rgba(247, 198, 0, 0.3);
+    padding: 26px 22px;
+    border-radius: 10px;
+    min-height: 420px;
+    color: #ddd;
+    box-shadow: 0 0 12px rgba(247, 198, 0, 0.15);
+    text-align: center;
+}
+
+.resume-box .icon {
+    font-size: 48px;
+    color: #f7c600;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.resume-item {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.resume-item strong {
+    color: #f7c600;
+}
+
+/* ============================
+   SERVICE BOX – DARK MINIMAL
+   ============================ */
+
+.service-box.minimal {
+    background: #050505;
+	margin: 12px;
+    border: 1px solid #2a2a2a;
+    padding: 28px 22px;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    transition: all .3s ease;
+    color: #fff;
+    display: block;
+}
+
+.service-box.minimal:hover {
+    border-color: #f5c542;
+    background: #0d0d0d;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.55);
+}
+
+/* Icon metallic */
+.service-icon {
+    font-size: 28px;
+    margin: 0 auto 18px auto;
+    display: block;
+    background: linear-gradient(135deg, #ffffff, #dcdcdc, #f2f2f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-box.minimal:hover .service-icon {
+    background: linear-gradient(135deg, #f5d67a, #e0b234, #f5d67a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f5c542;
+    letter-spacing: 0.5px;
+}
+
+.service-desc {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-bottom: 0;
+}
+
+/* ============================
+   EXPERTISE SECTION
+   ============================ */
+
+#expertise-section {
+    background: #020202;
+}
+
+.expertise-box {
+    background: #050505;
+    border: 1px solid #2a2a2a;
+    padding: 26px 22px;
+    border-radius: 12px;
+    width: 100%;
+    color: #fff;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 12px;
+}
+
+.expertise-box:hover {
+    border-color: #f5c542;
+    background: #0d0d0d;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+
+/* Glow line */
+.expertise-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f5c542, transparent);
+    opacity: 0;
+    transition: .35s ease;
+}
+
+.expertise-box:hover::before {
+    left: 10%;
+    opacity: 1;
+}
+
+.expertise-icon {
+    font-size: 26px;
+    display: block;
+    margin: 0 auto 16px auto;
+    text-align: center;
+    color: #e6e6e6;
+    transition: .3s ease;
+}
+
+.expertise-box:hover .expertise-icon {
+    color: #f5c542;
+}
+
+.expertise-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f5c542;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.expertise-desc {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Khoảng cách lớn hơn trên màn hình rộng */
+@media (min-width: 768px) {
+    .expertise-box {
+        margin: 16px;
+    }
+}
+/* ============================
+   HERO LAYOUT KIỂU HUDSON
+   (KHÔNG ĐỤNG FONT)
+   ============================ */
+
+.hero {
+    padding: 120px 0 80px 0; /* tạo khoảng thở dưới navbar */
+    background: #000; /* giữ nền đen như giao diện của bạn */
+}
+
+.hero .text {
+    color: #fff;
+}
+
+.hero .subheading {
+    font-size: 26px;
+    font-weight: 800; /* CHỮ DÀY */
+    color: #f7c600;   /* vàng thương hiệu */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800; /* CHỮ DÀY */
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #f7c600; /* tên màu vàng */
+}
+
+.hero h2 {
+    font-size: 26px;
+    font-weight: 600; /* dày vừa */
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-position: center right;
+    border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .hero {
+        padding: 80px 0 40px 0;
+    }
+
+    .hero-image {
+        height: 380px;
+        margin-top: 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+ .hero-image {
+    background-position: top center; /* giữ nguyên phần đầu */
+}
+		  
+  </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
