@@ -1,0 +1,720 @@
+<html lang="en">
+  <head>
+    <title>AN - Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	  <style>
+/* ============================
+   NAVBAR CỐ ĐỊNH TRÊN ĐẦU
+   ============================ */
+.ftco-navbar-light {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Chừa khoảng cho navbar */
+body {
+    padding-top: 70px; /* giảm từ 120px → 70px */
+}
+
+/* Menu xổ xuống không chiếm full màn hình */
+#ftco-nav {
+    max-height: calc(100vh - 70px) !important;
+    overflow-y: auto !important;
+}
+
+/* ============================
+   SLIDER / HERO SECTION
+   ============================ */
+
+/* Bỏ full-height mặc định của template */
+.js-fullheight,
+.home-slider,
+.slider-item {
+    height: auto !important;
+    min-height: 450px !important; /* gọn hơn 600px */
+}
+
+/* Luôn hiển thị chữ MENU */
+.ftco-navbar-light .navbar-toggler,
+.ftco-navbar-light.scrolled .navbar-toggler {
+    color: #fff !important;
+}
+
+/* ============================
+   MOBILE FIXES
+   ============================ */
+@media (max-width: 767px) {
+
+    /* Fix class gây đẩy chữ xuống */
+    .slider-item .one-third .slider-text {
+        padding-top: 20px !important;
+        margin-top: 0 !important;
+    }
+
+    /* Slider thấp hơn trên mobile */
+    .slider-item,
+    .home-slider,
+    .js-fullheight {
+        min-height: 450px !important;
+        padding-top: 0 !important;
+    }
+
+    /* Chữ không bị đẩy xuống */
+    .slider-item .text {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* Giảm khoảng trống body */
+    body {
+        padding-top: 80px !important;
+    }
+}
+
+/* ============================
+   RESUME BOX
+   ============================ */
+
+.resume-box {
+    background: #111;
+	margin: 12px;
+    border: 1px solid rgba(247, 198, 0, 0.3);
+    padding: 26px 22px;
+    border-radius: 10px;
+    min-height: 420px;
+    color: #ddd;
+    box-shadow: 0 0 12px rgba(247, 198, 0, 0.15);
+    text-align: center;
+}
+
+.resume-box .icon {
+    font-size: 48px;
+    color: #f7c600;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.resume-item {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.resume-item strong {
+    color: #f7c600;
+}
+
+/* ============================
+   SERVICE BOX – DARK MINIMAL
+   ============================ */
+
+.service-box.minimal {
+    background: #050505;
+	margin: 12px;
+    border: 1px solid #2a2a2a;
+    padding: 28px 22px;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    transition: all .3s ease;
+    color: #fff;
+    display: block;
+}
+
+.service-box.minimal:hover {
+    border-color: #f5c542;
+    background: #0d0d0d;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.55);
+}
+
+/* Icon metallic */
+.service-icon {
+    font-size: 28px;
+    margin: 0 auto 18px auto;
+    display: block;
+    background: linear-gradient(135deg, #ffffff, #dcdcdc, #f2f2f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-box.minimal:hover .service-icon {
+    background: linear-gradient(135deg, #f5d67a, #e0b234, #f5d67a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f5c542;
+    letter-spacing: 0.5px;
+}
+
+.service-desc {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-bottom: 0;
+}
+
+/* ============================
+   EXPERTISE SECTION
+   ============================ */
+
+#expertise-section {
+    background: #020202;
+}
+
+.expertise-box {
+    background: #050505;
+    border: 1px solid #2a2a2a;
+    padding: 26px 22px;
+    border-radius: 12px;
+    width: 100%;
+    color: #fff;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 12px;
+}
+
+.expertise-box:hover {
+    border-color: #f5c542;
+    background: #0d0d0d;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+
+/* Glow line */
+.expertise-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f5c542, transparent);
+    opacity: 0;
+    transition: .35s ease;
+}
+
+.expertise-box:hover::before {
+    left: 10%;
+    opacity: 1;
+}
+
+.expertise-icon {
+    font-size: 26px;
+    display: block;
+    margin: 0 auto 16px auto;
+    text-align: center;
+    color: #e6e6e6;
+    transition: .3s ease;
+}
+
+.expertise-box:hover .expertise-icon {
+    color: #f5c542;
+}
+
+.expertise-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f5c542;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.expertise-desc {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Khoảng cách lớn hơn trên màn hình rộng */
+@media (min-width: 768px) {
+    .expertise-box {
+        margin: 16px;
+    }
+}
+/* ============================
+   HERO LAYOUT KIỂU HUDSON
+   (KHÔNG ĐỤNG FONT)
+   ============================ */
+
+.hero {
+    padding: 120px 0 80px 0; /* tạo khoảng thở dưới navbar */
+    background: #000; /* giữ nền đen như giao diện của bạn */
+}
+
+.hero .text {
+    color: #fff;
+}
+
+.hero .subheading {
+    font-size: 26px;
+    font-weight: 800; /* CHỮ DÀY */
+    color: #f7c600;   /* vàng thương hiệu */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800; /* CHỮ DÀY */
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #f7c600; /* tên màu vàng */
+}
+
+.hero h2 {
+    font-size: 26px;
+    font-weight: 600; /* dày vừa */
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-position: center right;
+    border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .hero {
+        padding: 80px 0 40px 0;
+    }
+
+    .hero-image {
+        height: 380px;
+        margin-top: 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+ .hero-image {
+    background-position: top center; /* giữ nguyên phần đầu */
+}
+
+
+
+
+		  
+  </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="#"><img src="images/logo2.png" alt="logo" style="height:60px;"></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>HOME</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>ABOUT</span></a></li>
+	          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>RESUME</span></a></li>
+	          <li class="nav-item"><a href="index.html#services-section" class="nav-link"><span>SERVICES</span></a></li>
+	          <li class="nav-item"><a href="index.html#expertise-section" class="nav-link"><span>EXPERTISE</span></a></li>
+	          <li class="nav-item"><a href="index.html#designs-section" class="nav-link"><span>DESIGNS</span></a></li>
+	          <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>BLOGS</span></a></li>
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>CONTACT</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+	  <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+            <h1 class="mb-3 bread">Blog Single Post</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h2 class="mb-3">It is a long established fact a reader be distracted</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
+            <p>
+              <img src="images/image_3.jpg" alt="" class="img-fluid">
+            </p>
+            <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
+            <h2 class="mb-3 mt-5">#2. Creative WordPress Themes</h2>
+            <p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
+            <p>
+              <img src="images/image_4.jpg" alt="" class="img-fluid">
+            </p>
+            <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
+            <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
+            <p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>
+            <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Life</a>
+                <a href="#" class="tag-cloud-link">Sport</a>
+                <a href="#" class="tag-cloud-link">Tech</a>
+                <a href="#" class="tag-cloud-link">Travel</a>
+              </div>
+            </div>
+            
+            <div class="about-author d-flex p-4 bg-dark">
+              <div class="bio mr-5">
+                <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+              </div>
+              <div class="desc">
+                <h3>George Washington</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+              </div>
+            </div>
+
+
+            <div class="pt-5 mt-5">
+              <h3 class="mb-5">6 Comments</h3>
+              <ul class="comment-list">
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="images/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 20, 2019 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="images/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 20, 2019 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+
+                  <ul class="children">
+                    <li class="comment">
+                      <div class="vcard bio">
+                        <img src="images/person_1.jpg" alt="Image placeholder">
+                      </div>
+                      <div class="comment-body">
+                        <h3>John Doe</h3>
+                        <div class="meta">June 20, 2019 at 2:21pm</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                        <p><a href="#" class="reply">Reply</a></p>
+                      </div>
+
+
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="vcard bio">
+                            <img src="images/person_1.jpg" alt="Image placeholder">
+                          </div>
+                          <div class="comment-body">
+                            <h3>John Doe</h3>
+                            <div class="meta">June 20, 2019 at 2:21pm</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                            <p><a href="#" class="reply">Reply</a></p>
+                          </div>
+
+                            <ul class="children">
+                              <li class="comment">
+                                <div class="vcard bio">
+                                  <img src="images/person_1.jpg" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                  <h3>John Doe</h3>
+                                  <div class="meta">June 20, 2019 at 2:21pm</div>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                                  <p><a href="#" class="reply">Reply</a></p>
+                                </div>
+                              </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="images/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 20, 2019 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+              </ul>
+              <!-- END comment-list -->
+              
+              <div class="comment-form-wrap pt-5">
+                <h3 class="mb-5">Leave a comment</h3>
+                <form action="#" class="p-5 bg-dark">
+                  <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="icon icon-search"></span>
+                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-box ftco-animate">
+            	<h3 class="heading-sidebar">Categories</h3>
+              <ul class="categories">
+                <li><a href="#">Interior Design <span>(12)</span></a></li>
+                <li><a href="#">Exterior Design <span>(22)</span></a></li>
+                <li><a href="#">Industrial Design <span>(37)</span></a></li>
+                <li><a href="#">Landscape Design <span>(42)</span></a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Recent Blog</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 12, 2019</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 12, 2019</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 12, 2019</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Tag Cloud</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">house</a>
+                <a href="#" class="tag-cloud-link">office</a>
+                <a href="#" class="tag-cloud-link">building</a>
+                <a href="#" class="tag-cloud-link">land</a>
+                <a href="#" class="tag-cloud-link">table</a>
+                <a href="#" class="tag-cloud-link">interior</a>
+                <a href="#" class="tag-cloud-link">exterior</a>
+                <a href="#" class="tag-cloud-link">industrial</a>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Paragraph</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+
+	  
+
+ <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>I’m a designer who enjoys creating clean visuals, refining details, and preparing files for print and digital use. 
+				  Design is my way of turning ideas into something real.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://anvudesign.github.io/#"><span class="icon-github"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/an-vuhoanghoai-4338143b8"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/anvuhoanghoai?igsh=aWc5eDZ0Z21pYTlt"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="index.html#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+				<li><a href="index.html#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
+				<li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+				<li><a href="index.html#expertise-section"><span class="icon-long-arrow-right mr-2"></span>Expertise</a></li>
+                <li><a href="index.html#designs-section"><span class="icon-long-arrow-right mr-2"></span>Designs</a></li>
+				<li><a href="index.html#blog-section"><span class="icon-long-arrow-right mr-2"></span>Blogs</a></li>
+                <li><a href="index.html#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Vector Design (CorelDRAW)</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Image Editing & Retouching</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Digital Graphics & Social Media Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Branding & Visual Identity</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Basic Web Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Granlly Alle 26, 6710 Esbjerg V, Denmark</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+45 8195 4146</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">vuhoanghoaian1@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed & built <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">An</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+<script src="js/main.js"></script>
+
+<script>
+    document.querySelectorAll('#ftco-nav .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
+</script>
+
+
+  </body>
+</html>
+
