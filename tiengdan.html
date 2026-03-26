@@ -354,9 +354,10 @@ body {
 details {
     margin-bottom: 18px;
     padding: 12px 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 6px;
-    background: #fafafa;
+    background: #111;
+	color:#eee;
 }
 
 summary {
@@ -365,11 +366,23 @@ summary {
 }
 
 summary:hover {
-    color: #0077cc;
+    color: #f7c600;
 }
 
+/* FIX TEMPLATE FTCO CHẶN DETAILS */
+details {
+    display: block !important;
+}
 
+details[open] > * {
+    display: block !important;
+}
 
+summary {
+    display: list-item !important;
+    cursor: pointer;
+}
+/* ket thuc FIX TEMPLATE FTCO CHẶN DETAILS */
 		  
   </style>
   </head>
