@@ -341,53 +341,60 @@ body {
  .hero-image {
     background-position: top center; /* giữ nguyên phần đầu */
 }
-/* exam a1-2 */
+/* Container */
 .exam-container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
     line-height: 1.6;
 }
- .exams-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.6;
-}
 
-details {
-    margin-bottom: 18px;
-    padding: 12px 16px;
+/* Khối xổ */
+.exam-details {
     border: 1px solid #ddd;
     border-radius: 6px;
+    padding: 12px 16px;
     background: #fafafa;
+    margin-bottom: 16px;
 }
 
-summary {
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-summary:hover {
-    color: #0077cc;
-}
-
-.exam-item {
-    margin: 10px 0;
-}
-
-.exam-link {
+/* Tiêu đề xám */
+.exam-title {
     display: block;
     padding: 10px 12px;
-    background: #f0f0f0;
+    background: #f5f5f5;
     border-radius: 6px;
-    text-decoration: none;
+    font-size: 1.05rem;
     color: #333;
-    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.exam-link:hover {
-    background: #e0e0e0;
+/* Hover xanh blue */
+.exam-title:hover {
+    color: #0077cc;
+    background: #e9f3ff;
+}
+
+/* Link bên trong mục 1 */
+.exam-links {
+    margin-top: 12px;
+}
+
+.exam-link-item {
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #0077cc;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.exam-link-item:hover {
+    background: #e9f3ff;
 }
 
 
@@ -441,27 +448,25 @@ summary:hover {
 	<div class="exam-container">
 
     <h2>EXAM A1–A2</h2>
-   <div class="exams-container">
-        <p><strong>Thi A1, A2 đáng sợ là không ôn bài</strong></p>
-    </div> 
 
    
-   <!-- 1. Thông tin Government -->
-<div class="exam-item">
-    <a href="https://nyidanmark.dk/pl-PL/Words-and-concepts/US/Familie/Test-in-Danish-for-family-reunified-spouses" 
-       target="_blank" 
-       class="exam-link">
-        <strong>1. Thông tin chính thức về kỳ thi A1–A2</strong>
-    </a>
-</div>
+    <!-- 1. Thông tin về thi A1–A2 -->
+    <details class="exam-details">
+        <summary class="exam-title">1. Thông tin về thi A1, A2</summary>
 
-<div class="exam-item">
-    <a href="https://www.retsinformation.dk/eli/lta/2020/902" 
-       target="_blank" 
-       class="exam-link">
-        <strong>Thông tin nội dung thi tiếng Đan Mạch A1, A2</strong>
-    </a>
-</div>
+        <div class="exam-links">
+            <a href="https://nyidanmark.dk/pl-PL/Words-and-concepts/US/Familie/Test-in-Danish-for-family-reunified-spouses"
+               target="_blank" class="exam-link-item">
+                Trang thông tin kỳ thi A1, A2 cho người nước ngoài
+            </a>
+
+            <a href="https://www.retsinformation.dk/eli/lta/2020/902"
+               target="_blank" class="exam-link-item">
+                Thông tin nội dung thi A1, A2
+            </a>
+        </div>
+    </details>
+
 
 
 
