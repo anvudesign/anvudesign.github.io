@@ -354,10 +354,10 @@ body {
 details {
     margin-bottom: 18px;
     padding: 12px 16px;
-    border: 1px solid #333;
+    border: 1px solid #ddd;
     border-radius: 6px;
-    background: #111;
-	color:#eee;
+    background: #fafafa;
+	
 }
 
 summary {
@@ -1224,20 +1224,7 @@ Lisas sofa er meget gammel. Hun vil gerne købe en ny sofa. Hun køber en dejlig
     });
 </script>
 
-<script>
-document.querySelectorAll("summary").forEach(s => {
-    s.addEventListener("click", e => {
-        e.stopPropagation(); // NGĂN TEMPLATE CHẶN CLICK
-    });
-});
-</script>
 
-	  <script>
-// Gỡ toàn bộ handler click mà template đã gán cho <summary>
-document.querySelectorAll("summary").forEach(s => {
-    s.onclick = null;
-});
-</script>
 
 	  
   </body>
