@@ -349,42 +349,44 @@ body {
     line-height: 1.6;
 }
 
-/* Khối xổ */
-.exam-details {
+/* Khối details */
+.exam-box {
     border: 1px solid #ddd;
     border-radius: 6px;
-    padding: 12px 16px;
-    background: #fafafa;
+    background: #ffffff; /* nền trắng */
     margin-bottom: 16px;
+    overflow: hidden; /* giữ cho summary không bị lệch */
 }
 
 /* Tiêu đề xám */
 .exam-title {
-    display: block;
-    padding: 10px 12px;
+    padding: 12px 14px;
     background: #f5f5f5;
     border-radius: 6px;
     font-size: 1.05rem;
     color: #333;
     cursor: pointer;
     transition: 0.2s;
+    list-style: none;
 }
 
-/* Hover xanh blue */
+/* Hover xanh */
 .exam-title:hover {
     color: #0077cc;
     background: #e9f3ff;
 }
 
-/* Link bên trong mục 1 */
-.exam-links {
-    margin-top: 12px;
+/* Nội dung xổ ra */
+.exam-box > *:not(summary) {
+    padding: 14px 18px;
+    background: #ffffff; /* nền trắng rõ */
 }
 
+/* Link trong mục 1 */
 .exam-link-item {
     display: block;
-    padding: 8px 10px;
-    margin-bottom: 8px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
     background: #ffffff;
     border-radius: 6px;
     text-decoration: none;
@@ -396,7 +398,6 @@ body {
 .exam-link-item:hover {
     background: #e9f3ff;
 }
-
 
 
 		  
