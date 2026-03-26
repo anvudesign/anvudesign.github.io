@@ -367,7 +367,38 @@ summary {
 
 summary:hover {
     color: #f7c600;
+}.flashcard-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
 }
+/* về học từ vựng */
+.flashcard {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flashcard:hover {
+  background: #f7f7f7;
+}
+
+.flashcard .answer {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+
+
 
 
   </style>
@@ -1217,8 +1248,66 @@ Lisas sofa er meget gammel. Hun vil gerne købe en ny sofa. Hun køber en dejlig
         </details>
 
         <details>
-            <summary>Part 2</summary>
-            <p>--- Dán nội dung Part 2 ---</p>
+            <summary>Flashcard </summary>
+            <p>
+				<div>
+  <strong>Flashcards – Gia đình & cuộc sống cá nhân</strong>
+  <div class="flashcard-box">
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg arbejder som grafisk designer.
+      <div class="answer">arbejder som – work as</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg bor sammen med min mand.
+      <div class="answer">bor sammen – live together</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg har to børn.
+      <div class="answer">børn – children</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg kommer fra Vietnam.
+      <div class="answer">kommer fra – come from</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg er gift.
+      <div class="answer">gift – married</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg taler lidt dansk.
+      <div class="answer">taler – speak</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg står op klokken syv.
+      <div class="answer">står op – get up</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg laver mad hver dag.
+      <div class="answer">laver mad – cook</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg går en tur om aftenen.
+      <div class="answer">går en tur – go for a walk</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = (this.querySelector('.answer').style.display=='block'?'none':'block')">
+      Jeg besøger min familie i weekenden.
+      <div class="answer">besøger – visit</div>
+    </div>
+
+  </div>
+</div>
+
+			</p>
         </details>
 
         <details>
